@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <app-form-basic-info formGroupName="basicInfo"></app-form-basic-info>
+  <app-form-address formGroupName="address"></app-form-address>
+
+  <button type="submit">Submit</button>
+</form>
+
+<h3>Value</h3>
+<pre>{{ form.value | json }}</pre>
+
+<h3>Status</h3>
+<pre>{{ form.status }}</pre>
+
+<h3>Valid</h3>
+<pre>{{ form.valid }}</pre>

@@ -1,0 +1,13 @@
+<h3>Basic info</h3>
+<div [formGroup]="basicInfo">
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="text" formControlName="email" />
+  </div>
+
+  <app-form-socials formGroupName="socials"></app-form-socials>
+</div>
